@@ -73,24 +73,24 @@ Configuração do Banco de Dados
 
 No arquivo application.properties configure o banco de dados:
 
-# Banco de dados H2 (em memória)
+//Banco de dados H2 (em memória)
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.driverClassName=org.h2.Driver
 spring.datasource.username=sa
 spring.datasource.password=password
 
-# Habilita o console do H2 para acessar o banco via web
+//Habilita o console do H2 para acessar o banco via web
 spring.h2.console.enabled=true
 spring.h2.console.path=/h2-console
 
-# DDL auto-criação do banco (cria as tabelas automaticamente)
+//DDL auto-criação do banco (cria as tabelas automaticamente)
 spring.jpa.hibernate.ddl-auto=update
 
-# Desabilitar logging detalhado do Hibernate
+//Desabilitar logging detalhado do Hibernate
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
 
-# Usar H2 com modo de desenvolvimento
+//Usar H2 com modo de desenvolvimento
 spring.datasource.platform=h2
 
 Como Rodar o Projeto
